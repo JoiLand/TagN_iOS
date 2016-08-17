@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="ResponseNotificationTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_iconAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="TPh-Sd-RFq" customClass="TagNImageView">
+                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="K5o-fD-4F1"/>
+                            <constraint firstAttribute="width" constant="40" id="zgZ-Fk-87d"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-06-21 12:12:54 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kg1-Lo-Kfi">
+                        <rect key="frame" x="130" y="43" width="175" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="4Pi-Hx-OOw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="10"/>
+                        <color key="textColor" red="0.58823529409999997" green="0.57647058819999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyu-ax-DFt">
+                        <rect key="frame" x="20" y="58" width="300" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="xH6-Xa-Rad"/>
+                            <constraint firstAttribute="width" constant="300" id="yyi-yB-aG2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="yyi-yB-aG2"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdafjaksljfwaeirjiosa;djfklsadfkljsadklfjlas;dfjl;sakdjfklsjdaklfjsadf" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBd-CW-peJ">
+                        <rect key="frame" x="58" y="5" width="254" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="DMl-vs-PwS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TPh-Sd-RFq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="3xZ-tT-gw3"/>
+                    <constraint firstAttribute="trailing" secondItem="Kg1-Lo-Kfi" secondAttribute="trailing" constant="15" id="D3b-v6-zsl"/>
+                    <constraint firstItem="TPh-Sd-RFq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="FPx-Nt-yrS"/>
+                    <constraint firstAttribute="trailing" secondItem="uBd-CW-peJ" secondAttribute="trailing" constant="8" id="I6L-Ry-W7P"/>
+                    <constraint firstItem="oyu-ax-DFt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Tcj-z4-EuH"/>
+                    <constraint firstItem="uBd-CW-peJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ZX7-xu-A9i"/>
+                    <constraint firstItem="oyu-ax-DFt" firstAttribute="top" secondItem="Kg1-Lo-Kfi" secondAttribute="bottom" id="e8x-fv-8sT"/>
+                    <constraint firstAttribute="trailing" secondItem="oyu-ax-DFt" secondAttribute="trailing" id="fhS-QN-qNf"/>
+                    <constraint firstItem="Kg1-Lo-Kfi" firstAttribute="leading" secondItem="TPh-Sd-RFq" secondAttribute="trailing" constant="80" id="fzj-KM-DBy"/>
+                    <constraint firstAttribute="bottom" secondItem="oyu-ax-DFt" secondAttribute="bottom" id="gH6-MO-vzP"/>
+                    <constraint firstItem="uBd-CW-peJ" firstAttribute="top" secondItem="oyu-ax-DFt" secondAttribute="bottom" id="vtX-I2-YVK"/>
+                    <constraint firstItem="uBd-CW-peJ" firstAttribute="leading" secondItem="TPh-Sd-RFq" secondAttribute="trailing" constant="8" id="y5w-rg-Pel"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="vtX-I2-YVK"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="m_imgAvatar" destination="TPh-Sd-RFq" id="kcc-xD-d6z"/>
+                <outlet property="m_lblString" destination="uBd-CW-peJ" id="EUK-eS-t0Z"/>
+                <outlet property="m_lblTime" destination="Kg1-Lo-Kfi" id="A6s-M7-Q8g"/>
+            </connections>
+            <point key="canvasLocation" x="249" y="179"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="common_iconAvatar" width="128" height="128"/>
+    </resources>
+</document>

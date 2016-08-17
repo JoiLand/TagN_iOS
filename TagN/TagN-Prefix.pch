@@ -1,0 +1,35 @@
+//
+//  TagN-Prefix.pch
+//  TagN
+//
+//  Created by Kevin Lee on 2/4/16.
+//  Copyright © 2016 Kevin Lee. All rights reserved.
+//
+
+#ifndef TagN_Prefix_pch
+#define TagN_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <HexColors/HexColors.h>
+#import <Toast/UIView+Toast.h>
+#import <MFSideMenu/MFSideMenu.h>
+#import <RDVTabBarController/RDVTabBarController.h>
+#import <UIImage-ResizeMagick/UIImage+ResizeMagick.h>
+#import <AFNetworking/UIImageView+AFNetworking.h>
+#import <NSDate-TimeDifference/NSDate+TimeDifference.h>
+#import "UIImageView+TagN.h"
+#import <DXPopover/DXPopover.h>
+
+#import "Constants.h"
+#import "TagNImageView.h"
+#import "GlobalService.h"
+#import "WebService.h"
+#import "CoreDataService.h"
+#import "JHImageService.h"
+#import "JHParallaxViewController.h"
+#import "TransitionService.h"
+
+#endif /* TagN_Prefix_pch */

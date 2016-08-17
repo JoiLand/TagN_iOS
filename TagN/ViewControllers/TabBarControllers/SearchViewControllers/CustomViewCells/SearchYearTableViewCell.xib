@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SearchYearTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="213"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_imgDefault" translatesAutoresizingMaskIntoConstraints="NO" id="vWf-xv-pR3">
+                        <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_imgDefault" translatesAutoresizingMaskIntoConstraints="NO" id="kpD-iH-yjk">
+                        <rect key="frame" x="107" y="0.0" width="106" height="105"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_imgDefault" translatesAutoresizingMaskIntoConstraints="NO" id="vRj-eV-RVw">
+                        <rect key="frame" x="215" y="0.0" width="105" height="105"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_imgDefault" translatesAutoresizingMaskIntoConstraints="NO" id="e5e-qX-Scy">
+                        <rect key="frame" x="0.0" y="107" width="105" height="105"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_imgDefault" translatesAutoresizingMaskIntoConstraints="NO" id="WEw-x4-6WC">
+                        <rect key="frame" x="107" y="107" width="106" height="105"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_imgDefault" translatesAutoresizingMaskIntoConstraints="NO" id="0y5-Zv-4q0">
+                        <rect key="frame" x="215" y="107" width="105" height="105"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="e5e-qX-Scy" secondAttribute="bottom" id="7HG-2a-Pmn"/>
+                    <constraint firstItem="0y5-Zv-4q0" firstAttribute="leading" secondItem="WEw-x4-6WC" secondAttribute="trailing" constant="2" id="7vs-F4-s6j"/>
+                    <constraint firstItem="kpD-iH-yjk" firstAttribute="leading" secondItem="vWf-xv-pR3" secondAttribute="trailing" constant="2" id="BQb-bx-Fqe"/>
+                    <constraint firstItem="vRj-eV-RVw" firstAttribute="centerY" secondItem="kpD-iH-yjk" secondAttribute="centerY" id="BjC-dL-8Kp"/>
+                    <constraint firstAttribute="trailing" secondItem="0y5-Zv-4q0" secondAttribute="trailing" id="BoP-Ly-Hoq"/>
+                    <constraint firstItem="e5e-qX-Scy" firstAttribute="top" secondItem="vWf-xv-pR3" secondAttribute="bottom" constant="2" id="EjL-DI-L2S"/>
+                    <constraint firstItem="vRj-eV-RVw" firstAttribute="width" secondItem="kpD-iH-yjk" secondAttribute="width" id="HmN-Lr-gY5"/>
+                    <constraint firstItem="vRj-eV-RVw" firstAttribute="leading" secondItem="kpD-iH-yjk" secondAttribute="trailing" constant="2" id="Jn7-MS-fn9"/>
+                    <constraint firstItem="vRj-eV-RVw" firstAttribute="height" secondItem="kpD-iH-yjk" secondAttribute="height" id="L8Q-OH-mMO"/>
+                    <constraint firstItem="WEw-x4-6WC" firstAttribute="leading" secondItem="e5e-qX-Scy" secondAttribute="trailing" constant="2" id="MSO-Iq-W2E"/>
+                    <constraint firstItem="0y5-Zv-4q0" firstAttribute="width" secondItem="WEw-x4-6WC" secondAttribute="width" id="P91-3G-pa7"/>
+                    <constraint firstItem="vWf-xv-pR3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QnJ-7h-w2Q"/>
+                    <constraint firstItem="kpD-iH-yjk" firstAttribute="width" secondItem="vWf-xv-pR3" secondAttribute="width" id="RxK-Oy-0lR"/>
+                    <constraint firstItem="kpD-iH-yjk" firstAttribute="height" secondItem="vWf-xv-pR3" secondAttribute="height" id="abJ-o0-Oeq"/>
+                    <constraint firstItem="e5e-qX-Scy" firstAttribute="centerX" secondItem="vWf-xv-pR3" secondAttribute="centerX" id="cVf-hl-OzY"/>
+                    <constraint firstItem="e5e-qX-Scy" firstAttribute="height" secondItem="vWf-xv-pR3" secondAttribute="height" id="clV-8z-bb2"/>
+                    <constraint firstItem="WEw-x4-6WC" firstAttribute="height" secondItem="e5e-qX-Scy" secondAttribute="height" id="fEg-gl-jav"/>
+                    <constraint firstItem="WEw-x4-6WC" firstAttribute="width" secondItem="e5e-qX-Scy" secondAttribute="width" id="gzP-Bm-cIx"/>
+                    <constraint firstAttribute="trailing" secondItem="vRj-eV-RVw" secondAttribute="trailing" id="ig2-Xa-j4Q"/>
+                    <constraint firstItem="vWf-xv-pR3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mew-WM-ay7"/>
+                    <constraint firstItem="0y5-Zv-4q0" firstAttribute="height" secondItem="WEw-x4-6WC" secondAttribute="height" id="pSd-hx-Mc8"/>
+                    <constraint firstItem="e5e-qX-Scy" firstAttribute="width" secondItem="vWf-xv-pR3" secondAttribute="width" id="pfP-xp-3wR"/>
+                    <constraint firstItem="kpD-iH-yjk" firstAttribute="centerY" secondItem="vWf-xv-pR3" secondAttribute="centerY" id="qa8-f7-AD7"/>
+                    <constraint firstItem="WEw-x4-6WC" firstAttribute="centerY" secondItem="e5e-qX-Scy" secondAttribute="centerY" id="vFl-Z8-YwA"/>
+                    <constraint firstItem="0y5-Zv-4q0" firstAttribute="centerY" secondItem="WEw-x4-6WC" secondAttribute="centerY" id="wHt-Q2-Mpb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="m_imgPhoto1" destination="vWf-xv-pR3" id="0G4-wf-Edo"/>
+                <outlet property="m_imgPhoto2" destination="kpD-iH-yjk" id="B62-qo-PlV"/>
+                <outlet property="m_imgPhoto3" destination="vRj-eV-RVw" id="wbx-sm-5cO"/>
+                <outlet property="m_imgPhoto4" destination="e5e-qX-Scy" id="Lfh-m8-1zj"/>
+                <outlet property="m_imgPhoto5" destination="WEw-x4-6WC" id="3Au-jh-WiD"/>
+                <outlet property="m_imgPhoto6" destination="0y5-Zv-4q0" id="QbG-i5-4vU"/>
+            </connections>
+            <point key="canvasLocation" x="341" y="168"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="common_imgDefault" width="320" height="320"/>
+    </resources>
+</document>

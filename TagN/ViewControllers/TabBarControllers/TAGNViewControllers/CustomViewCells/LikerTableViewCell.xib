@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="75" id="KGk-i7-Jjw" customClass="LikerTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_iconAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="PA4-Dx-Bsl" customClass="TagNImageView">
+                        <rect key="frame" x="10" y="5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="7ev-X7-4BQ"/>
+                            <constraint firstAttribute="height" constant="40" id="TDc-gH-aFG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hx-Nw-gci">
+                        <rect key="frame" x="58" y="5" width="146" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="MxR-br-UJm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9W-g1-4dB">
+                        <rect key="frame" x="58" y="30" width="146" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Qc6-zl-X5X"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                        <color key="textColor" red="0.58823529409999997" green="0.57647058819999997" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 hours ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5B-ef-TcE">
+                        <rect key="frame" x="212" y="8" width="100" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="YG9-oT-T2H"/>
+                            <constraint firstAttribute="height" constant="15" id="zU4-AW-PWf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                        <color key="textColor" red="0.58823529409999997" green="0.57647058819999997" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nn8-JE-kmp">
+                        <rect key="frame" x="20" y="49" width="300" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="BYd-s5-9nc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="m5B-ef-TcE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="7V5-YV-IOa"/>
+                    <constraint firstItem="2hx-Nw-gci" firstAttribute="leading" secondItem="PA4-Dx-Bsl" secondAttribute="trailing" constant="8" id="E3C-7g-0PJ"/>
+                    <constraint firstAttribute="trailing" secondItem="m5B-ef-TcE" secondAttribute="trailing" constant="8" id="JRg-lo-Djq"/>
+                    <constraint firstAttribute="bottom" secondItem="Nn8-JE-kmp" secondAttribute="bottom" id="LsJ-65-wXd"/>
+                    <constraint firstItem="f9W-g1-4dB" firstAttribute="centerX" secondItem="2hx-Nw-gci" secondAttribute="centerX" id="MoL-e2-mtP"/>
+                    <constraint firstItem="2hx-Nw-gci" firstAttribute="centerY" secondItem="m5B-ef-TcE" secondAttribute="centerY" id="Pcw-9w-SNw"/>
+                    <constraint firstItem="Nn8-JE-kmp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Vvk-sB-Ny1"/>
+                    <constraint firstAttribute="trailing" secondItem="Nn8-JE-kmp" secondAttribute="trailing" id="ZPb-9e-ccy"/>
+                    <constraint firstItem="f9W-g1-4dB" firstAttribute="top" secondItem="2hx-Nw-gci" secondAttribute="bottom" constant="4" id="je5-sm-LOm"/>
+                    <constraint firstItem="PA4-Dx-Bsl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="non-08-6y8"/>
+                    <constraint firstItem="m5B-ef-TcE" firstAttribute="leading" secondItem="2hx-Nw-gci" secondAttribute="trailing" constant="8" id="rnV-7l-YDq"/>
+                    <constraint firstItem="f9W-g1-4dB" firstAttribute="width" secondItem="2hx-Nw-gci" secondAttribute="width" id="sRf-x7-asf"/>
+                    <constraint firstItem="PA4-Dx-Bsl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="tnX-88-JkC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="m_imgAvatar" destination="PA4-Dx-Bsl" id="qRR-YZ-75m"/>
+                <outlet property="m_lblName" destination="2hx-Nw-gci" id="3JC-6y-Yf9"/>
+                <outlet property="m_lblTime" destination="m5B-ef-TcE" id="X2v-aI-W7g"/>
+                <outlet property="m_lblUserName" destination="f9W-g1-4dB" id="XyC-mr-LsK"/>
+            </connections>
+            <point key="canvasLocation" x="256" y="135"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="common_iconAvatar" width="128" height="128"/>
+    </resources>
+</document>

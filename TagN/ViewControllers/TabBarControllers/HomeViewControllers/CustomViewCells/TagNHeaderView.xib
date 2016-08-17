@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TagNHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUZ-dk-9vc">
+                    <rect key="frame" x="275" y="0.0" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="JPp-Tx-s1b"/>
+                        <constraint firstAttribute="width" constant="35" id="xq7-rJ-nNj"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="-3"/>
+                    <state key="normal" image="common_btnDropDown"/>
+                    <connections>
+                        <action selector="onClickBtnDropDown:" destination="iN0-l3-epB" eventType="touchUpInside" id="osN-gS-d40"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paB-mp-oqa">
+                    <rect key="frame" x="8" y="9" width="38" height="17"/>
+                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="KUZ-dk-9vc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9Iq-OK-5vD"/>
+                <constraint firstItem="paB-mp-oqa" firstAttribute="centerY" secondItem="KUZ-dk-9vc" secondAttribute="centerY" id="IEA-8V-TTp"/>
+                <constraint firstItem="KUZ-dk-9vc" firstAttribute="leading" secondItem="paB-mp-oqa" secondAttribute="trailing" constant="8" id="XLK-e8-hvP"/>
+                <constraint firstItem="paB-mp-oqa" firstAttribute="height" secondItem="KUZ-dk-9vc" secondAttribute="height" id="dYg-5p-4DJ"/>
+                <constraint firstItem="paB-mp-oqa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="hh0-Dn-kGX"/>
+                <constraint firstAttribute="trailing" secondItem="KUZ-dk-9vc" secondAttribute="trailing" constant="10" id="uga-gh-t7d"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="dYg-5p-4DJ"/>
+                    <exclude reference="XLK-e8-hvP"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="m_btnShowDropDown" destination="KUZ-dk-9vc" id="Z70-iw-hQu"/>
+                <outlet property="m_lblTagFullText" destination="paB-mp-oqa" id="56y-Wp-4kn"/>
+            </connections>
+            <point key="canvasLocation" x="-156" y="56.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_btnDropDown" width="35" height="35"/>
+    </resources>
+</document>

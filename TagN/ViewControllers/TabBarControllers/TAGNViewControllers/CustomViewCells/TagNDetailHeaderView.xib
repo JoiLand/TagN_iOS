@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TagNDetailHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JH Lee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59Y-21-ljN">
+                    <rect key="frame" x="58" y="15" width="163" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="46R-7Z-TSM"/>
+                        <constraint firstAttribute="width" constant="163" id="q8G-YD-jyE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xD9-JN-Xaj">
+                    <rect key="frame" x="199" y="30" width="113" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="KZ9-VG-gKN"/>
+                        <constraint firstAttribute="width" constant="113" id="niu-aA-Bf7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                    <color key="textColor" red="0.58823529409999997" green="0.57647058819999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_iconAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="87i-ti-fHQ" customClass="TagNImageView">
+                    <rect key="frame" x="10" y="5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="vXs-Pd-YtX"/>
+                        <constraint firstAttribute="width" constant="40" id="wb2-IV-sJz"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xD9-JN-Xaj" secondAttribute="trailing" constant="8" id="GB3-xl-VvY"/>
+                <constraint firstItem="87i-ti-fHQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bsz-Zi-dUw"/>
+                <constraint firstAttribute="bottom" secondItem="xD9-JN-Xaj" secondAttribute="bottom" constant="5" id="gK4-s9-ghk"/>
+                <constraint firstItem="59Y-21-ljN" firstAttribute="centerY" secondItem="87i-ti-fHQ" secondAttribute="centerY" id="jYk-n3-j8k"/>
+                <constraint firstItem="59Y-21-ljN" firstAttribute="leading" secondItem="87i-ti-fHQ" secondAttribute="trailing" constant="8" id="pkx-d0-xAq"/>
+                <constraint firstItem="87i-ti-fHQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="w3T-sb-e5l"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="m_imgAvatar" destination="87i-ti-fHQ" id="YVW-io-xuu"/>
+                <outlet property="m_lblName" destination="59Y-21-ljN" id="udx-g6-SyL"/>
+                <outlet property="m_lblTime" destination="xD9-JN-Xaj" id="B8v-cQ-RMn"/>
+            </connections>
+            <point key="canvasLocation" x="473" y="260"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_iconAvatar" width="128" height="128"/>
+    </resources>
+</document>

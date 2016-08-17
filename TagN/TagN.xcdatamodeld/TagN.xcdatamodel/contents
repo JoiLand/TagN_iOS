@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="CoreDataImage" representedClassName="CoreDataImage" syncable="YES">
+        <attribute name="image_created_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="image_data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image_height" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="image_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="image_is_processing" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="image_is_uploaded" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="image_tag_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="image_thumb_data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image_thumb_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_user_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="image_width" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CoreDataImage" positionX="-45" positionY="0" width="128" height="225"/>
+    </elements>
+</model>
